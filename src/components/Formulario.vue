@@ -6,7 +6,7 @@ const props = defineProps(["numero1", "numero2", "trocarFiltro"]);
     <form>
         <div class="row">
             <div class="col d-flex">
-            <input @keyup="props.numero1" required type="number" placeholder="Digite o número a ser convertido" class="form-control border-dark">
+            <input @keyup="props.numero1" required type="number" placeholder="Digite o valor a ser convertido" class="form-control border-dark">
             </div>
             <div class="col-md-4 alteraCelular">
                 <select @change="props.trocarFiltro" class="alinhaTexto form-control border-dark">
