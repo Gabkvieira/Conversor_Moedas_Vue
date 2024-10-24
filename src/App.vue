@@ -5,47 +5,47 @@
   const estado = reactive({
     NumeroASerConvertido: 0,
     filtro: 'pesoChileno',
-  })
+  });
 
 const pesoChilenoReal = ({ NumeroASerConvertido } = estado) => {
   return NumeroASerConvertido * 0.00597973;
-}
+};
 
 const dolarReal = ({ NumeroASerConvertido } = estado) => {
   return NumeroASerConvertido * 5.692;
-}
+};
 
 const euroReal = ({ NumeroASerConvertido } = estado) => {
   return NumeroASerConvertido * 6.1491;
-}
+};
 
 const wonReal = ({ NumeroASerConvertido } = estado) => {
   return NumeroASerConvertido * 0.00412449 ;
-}
+};
 
 const ieneReal = ({ NumeroASerConvertido } = estado) => {
   return NumeroASerConvertido * 0.0376637;
-}
+};
 
 const realPesoChileno = ({ NumeroASerConvertido } = estado) => {
   return NumeroASerConvertido / 0.00597973;
-}
+};
 
 const realDolar = ({ NumeroASerConvertido } = estado) => {
   return NumeroASerConvertido / 5.692;
-}
+};
 
 const realEuro = ({ NumeroASerConvertido } = estado) => {
   return NumeroASerConvertido / 6.1491;
-}
+};
 
 const realWon = ({ NumeroASerConvertido } = estado) => {
   return NumeroASerConvertido / 0.00412449 ;
-}
+};
 
 const realIene = ({ NumeroASerConvertido } = estado) => {
   return NumeroASerConvertido / 0.0376637;
-}
+};
 
 const resultado = () => {
   const {filtro} = estado;
@@ -89,7 +89,6 @@ const resultado = () => {
     <br>
     <h1 class="text-center border border-dark rounded p-5">O resultado é: {{ resultado() }} </h1>
   </div>
-  
 </template>
 
 <style scoped>
